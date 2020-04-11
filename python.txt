@@ -1,4 +1,4 @@
-pwd-print working diroctry Shivam MM
+ï»¿pwd-print working diroctry Shivam MM
 current location btayega
 ls- saare detail mil jayega folders ka
 clear-screen ko clear karne k liye
@@ -917,14 +917,14 @@ print(common_finder([1,2,5,8],[1,2,7,6]) )
 ##############################################################
 
 Min and MAX function in python                                                                                                lec 105
-number = [6,60,2]
- print(min(number))       output = 2
-number = [6,60,2]
- print(max(number))       output = 60
+numberÂ =Â [6,60,2]
+Â print(min(number))       output = 2
+numberÂ =Â [6,60,2]
+Â print(max(number))       output = 60
 More Example 
-number = [6,60,2]
-def greatest_diff(l):
-    return max(l) - min(l)
+numberÂ =Â [6,60,2]
+defÂ greatest_diff(l):
+Â Â Â Â returnÂ max(l)Â -Â min(l)
 print(greatest_diff(number))
 
 ###############################################################
@@ -932,15 +932,15 @@ print(greatest_diff(number))
 Problm solving
 #function
 #[1,2,3,[1,2],[3,4]]
-#output = 2         isme count karna ahai list kitne baar hai function use kar k 
+#outputÂ =Â 2         isme count karna ahai list kitne baar hai function use kar k 
 Solution 
-def list_count(l):
-    count = 0
-    for i in l:
-        if type(i) == list:                                                                                                    lec 107
-            count = count+1
-    return count
-mixed = [1,2,3,[1,2],[3,4]]
+defÂ list_count(l):
+Â Â Â Â countÂ =Â 0
+Â Â Â Â forÂ iÂ inÂ l:
+Â Â Â Â Â Â Â Â ifÂ type(i)Â ==Â list:                                                                                                    lec 107
+Â Â Â Â Â Â Â Â Â Â Â Â countÂ =Â count+1
+Â Â Â Â returnÂ count
+mixedÂ =Â [1,2,3,[1,2],[3,4]]
 print(list_count(mixed))
 Output = 2
 
