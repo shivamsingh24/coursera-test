@@ -1,0 +1,962 @@
+pwd-print working diroctry
+current location btayega
+ls- saare detail mil jayega folders ka
+clear-screen ko clear karne k liye
+
+cd d:// to chnage diritry
+
+directry  create krna ho toh 
+mkdir "file name"
+agar double coutes nai use kiye to alag alag files me divide ho ajega 
+ 
+kisi  folder k ander kese ghusna hai
+cd command_line
+
+ folder k ander file kese create krna hau 
+$touch new_documents.txt
+
+how to remove file
+rm file name 
+
+how to remove folder
+rm -rf file name 
+kisi file k ander coding krna hai toh
+code file name
+
+
+rename krna hai toh 
+mv jo file name hai space de kar fir naya file ka naam jo edit krna chatete haii usko 
+
+copy krna hai toh cd file.txt ./new_folder/
+
+emogy krne k liye
+U+1F606
+
+do input ko ek saath lena hai toh uska 
+name ,age = input ("enter	 your name anf age ").split()
+print(name )
+print(age)
+
+String formatting 
+name =  "shivam "
+age = 22
+print("hellow {} your age is{}".format(name,age))
+print (f"hellow {name } your age is {age}")
+
+num1,num2,num3 = input("enter three number").split(",")
+avg = (int(num1) + int(num2)+ int(num3)) /3
+print (f"avg is{avg}") 
+
+Indexing 
+language = "python"
+print(language[3])
+
+
+String slicing
+lang = "python"
+#print(lang[4])
+#syntax - [start argument : stop argument - 1]
+print(lang[3:5])
+
+o/p--- ho
+
+Reverse
+name = input("enter the username :")
+reverse = name[::-1]
+print(f"reverse is {reverse}" )
+
+length
+name = "shivam"
+
+print(len(name))
+
+upper case
+name = "shiVam"
+
+print(name.upper())
+
+lower case
+name = "shiVam"
+
+print(name.lower())
+ 
+title method 
+name = "shiVam"
+
+print(name.title())
+o/p -- Shivam
+
+count method if u wnat to chk kitne character repeat hue then ll use count
+name = "shiVam"
+
+print(name.count("v"))
+o/p-- 0
+[[[[[[
+name, char = input("enter name and character: ").split(",")
+print(f"length of th echarcter is {len(name)}")
+print(f"character count:{name.lower().count(char.lower())}")   
+]]]]]]
+
+Strip method 
+name = "        shi vam"
+dot = ".........."
+print(name + dot)
+print(name.lstrip() + dot)
+print(name.rstrip() + dot)
+print(name.strip() + dot)
+print(name.replace(" ","") + dot)
+
+Find method and  replace method 
+string = "hey this is shivam singh"
+print(string.replace("is","was"))
+
+string = "hey ths is shivam singh he is gud "
+print(string.replace("is","was",1))
+
+string = "hey ths is shivam singh he is gud "
+print(string.replace("is","was",1))
+
+
+is_pos1 = string.find("is")
+is_pos2 = string.find("is", is_pos1 + 5)
+print(is_pos2)
+
+center method 
+name =  input("enter your name ")
+print(name.center(len(name) + 12,"*"))
+
+
+Strings are immutable 
+
+stirng = "String"
+string[1] = 'T'
+chnge nahi kar sakte 
+replace method bhi use kar k origional string ko nahi chhed sakte 
+example 
+stirng = "String"
+string.replace('t','T')
+agar again origional ko print karenge jese
+print(string )
+o/p -- String 
+naya string me daal diye tab karega jese
+
+stirng = "String"
+new_string = string.replace('t','T')
+print (new_string )
+
+Assignment operators
+
+ name ="harsh"
+ name = name +"it"
+print(name )
+
+one more way 
+ name ="harsh"
+name += "it"
+print(name )
+
+age = 23
+age *= 1
+print(age )
+
+
+IF statement 
+
+age = input("enter the age :" )
+age = int(age)
+if age >= 14:
+    print("lineA")
+    print("you are above 14")
+else:
+    print("belwo")    
+
+Pass statement 
+agar aap chahete hai ki kuch nahi likhna chahete is statement kk baad then u can use pass statement 
+koi error nhi aega fr
+example
+
+	# pass statement
+x = 18
+if x > 18:
+    pass
+
+ if else statement 
+
+# Else statement
+age = input("enter the age :" )
+age = int(age)
+if age >= 14:
+    print("lineA")
+    print("you are above 14")
+else:
+    print("sry u cant play") 
+
+
+Winning_number = 30
+user_input = input("guess any number")
+user_input = int(user_input)
+if user_input == Winning_number:
+    print("you win")
+else:
+         if user_input < Winning_number:
+            print("too low man")
+         else :
+             print("Too high man")
+   
+
+# chk twoo condn at same time 
+#  and ,or
+
+name = "abc"
+age = 22
+
+if name == "abc" and age == 22:
+    print("true")
+else:
+    print("false")
+
+agar ek v condition galat hogi o/p false aegav dono condn true honi chanhiye
+
+user_name = input("enter user name ")
+user_age = input("enter user age ")
+user_age = int(user_age)
+
+if user_age >= 10 and ( user_name[0] == "a" and user_name[0] == "A"):
+    print("you can watch movie")
+else:
+    print("you cant watch")
+
+if elif else statement
+
+age = input("enter your age ")
+age = int(age)
+if age == 0 or age < 0:
+    print("cant watch man")
+
+if( 0<age<3):
+    print("price is free man")
+elif(3<age<=10):
+    print("price is 150")
+elif(10<age<60):
+    print("price is 250")
+else:
+    print("ticket price is 200")
+
+
+# in keyword
+name = "shivam "
+if 'a' in "shivam":
+    print("a is present in name")
+else:
+    print("a is not present in name ")
+
+
+# chk empty or not
+
+name = input("enter your name")
+ 
+if name:
+    print(f"your name is{name}")
+else:
+     print("you didt tyoed anything")   
+
+
+While loop
+
+# while loop 
+i = 1
+while i <= 20:
+    print(f"prernaa {i}")
+    i = i+1
+
+# sum of number using while loop
+
+total = 0
+i = 1 #i= 2  
+while i <=10:
+      total = total + i
+      i = i+1
+print (total)
+
+# total = 0+1, 1+1,2+1
+
+#########################
+number = input ("enter the natural number")
+number = int(number)
+total = 0
+i = 1
+while i <= number:
+      total = total + i;
+      i = i+1
+print (total)
+
+
+
+
+
+
+number = input("enter  a number ")
+        #   3456  #length = 4 last index = 3
+total  = 0 #total =3 #total = 7 #total = 12
+i = 0 #i=1 #i =2 # i= 3
+while i < len(number):
+      total += int(number[i])
+      i += 1
+
+print(total)
+
+# total = 3 +0
+# total = 3+4=7
+# total = 7+5=12
+#total = 12+6=18
+
+ 
+
+user_name = input("enter the name of the user")
+i = 0 #length = 7
+repeat_var = ""
+ 
+while i < len(user_name):
+    if user_name[i] not in repeat_var:
+           repeat_var += user_name[i]
+           print(f"{user_name[i]}:{user_name.count(user_name[i])}")
+    i = i+1
+
+FOR loop#####################################
+
+for i in range (10):
+    print(f"never give up :{i}")
+for i in range (1,10):
+    print(f"never give up :{i}")
+
+
+#  sum of number using for loop##########################
+
+total = 0
+for i in range(1,4):   # i = 1,2,3
+      total = total + i
+    #   total = 0+1=1
+    #   total = 1+2=3
+    #   total=  3+3=6
+      print(total)
+
+user se enter krna hai toh #####################
+num = input("enter the number")
+num = int(num)
+total  = 0
+for i in range(1,num + 1):#(1,3)
+      total = total + i
+            print(total)
+ 
+sum of the nuumbers ###############################
+
+num = input("'enter the number for sum:")   #2345
+total = 0
+for i in range (0 , len(num)):
+      total = total + int(num[i])
+
+print(total)
+
+
+
+one more example
+
+
+
+name = input ("enter the name of the user")
+#  harshit
+temp = ""
+for i in range(len(name)):
+    if name[i] not in temp:
+     print(f"{name[i]}: {name.count(name[i])}")
+     temp = temp+ name[i]
+
+
+
+BREAK AND CONTINIE#########################
+
+
+for i in range (1,11):
+    if i == 5:
+        break
+    print (i)
+
+for i in range (1,11):
+if i == 5:
+continue 
+print(i)
+\
+
+winning_number = 43
+guess = 1
+number = input("guess the number between 1 and 100:")
+number = int(number)
+game_over = False
+while not game_over:
+    if number == winning_number:
+         print(f"you win,and you guessed this {guess}time")
+         game_over = True
+    else:
+         if number < winning_number:
+              print("too low ")
+              guess = guess + 1
+              number =  int( input("guess again:"))
+
+         else:
+             print("too high")    
+             guess = guess + 1
+             number =int( input("guess again:"))
+
+one more method 
+winning_number = 43
+guess = 1
+
+
+game_over = False
+while True:
+    number = input("guess the number between 1 and 100:")
+    number = int(number)
+    if number == winning_number:
+         print(f"you win,and you guessed this {guess}time")
+         game_over = True
+         break
+    else:
+         if number < winning_number:
+              print("too low ")
+             
+         else:
+             print("too high")    
+             continue
+    
+
+# step argument
+
+for i in range(1,11,3):
+      print(i)
+
+# step argument
+
+for i in range(10,0,-1):
+      print(i)
+ ###################################
+FOR LOOP AND STRING 
+
+name = "shivam"
+for  i in range(len(name)):
+      print (name[i])
+num = input("enter the number :")
+# num = 234
+total =  0
+for i in num:
+    total = total + int(i)
+    print(total)
+
+#######################
+Funtion Intro
+def add_two(num1,num2):
+    return num1 + num2
+
+a = int(input("enter the first number"))
+b = int(input("enter the second number"))
+
+total = add_two(a,b)    
+print(total)
+
+
+def add_two(num1,num2):
+    return num1 + num2
+
+first_number = int(input("Enter the first number"))
+second_number = int(input("enter the second number"))
+
+print(add_two(first_number,second_number))
+
+def odd_even(num):
+    if num%2 == 0:
+        return "True"    
+    else:
+        return "False"
+    
+print(odd_even(5))
+########
+def is_even(num):
+    return num%2 == 0
+
+print(is_even(2))
+
+
+# Function mein koki v parameter nah pass karoge to v print karega example 
+def song():
+    return "happy birthday to you "
+
+print(song())
+
+##################example 
+def greater_num(num1,num2):
+    if num1 > num2:
+        return num1
+    else :
+        return num2
+num1 = input("enter the first number")
+num2 = input("enter the second number")
+bigger = greater_num(num1, num2)
+print(f"{bigger}is greater_num") 
+  
+
+one more example 
+
+def greater(a,b,c):
+    if a>b:
+        return a
+    elif b>c:
+        return b
+    else:
+        return c
+
+a = input("enter the first number")
+b =  input(" enter the second number")
+c =  input(" enter the third number ") 
+bigger = greater(a,b,c)
+print(f"{bigger}is greater among three")           
+
+
+###########################################
+/ chk number is palindrome or not 
+def is_palindrome(word):
+    
+    if word == word[::-1]:
+        return True
+    else: 
+        return False
+
+print(is_palindrome("shivam"))
+print(is_palindrome("prerp"))   
+
+//////agar nahi chahete ki next line me print ho then 
+for i in range (1,11):
+     print(i, end = "")
+
+
+
+############################
+def fibonacci_seq(n):
+    a = 0
+    b = 1
+    if n == 1:
+        print(a)
+    elif n == 2:
+        print(a, b)
+    else:
+        print (a,b, end= " ")
+        for i in range(n-2):
+            c = a + b
+            a = b
+            b = c
+            print(b , end = " ")
+    fibonacci_seq(10)   
+
+
+##############default parameter
+
+def user_info(first_name, last_name, age):
+    print(f"your first name is{first_name}")
+    print(f"your last name is {last_name}")
+    print(f"your age is{age}")
+
+user_info('shivam','singh',22)
+
+def user_info(first_name, last_name = 'unknown', age = 24):
+    print(f"your first name is{first_name}")
+    print(f"your last name is {last_name}")
+    print(f"your age is{age}")
+
+user_info('shivam','singh')
+
+rule hai ki huum sirf last wale hi parameter ko defauult bana skte hai means second last wala ko default kar diye last wala ni hai means error hoga fir
+
+def user_info(first_name, last_name = 'unknown', age = 24):
+    print(f"your first name is{first_name}")
+    print(f"your last name is {last_name}")
+    print(f"your age is{age}")
+
+user_info('shivam')
+
+##########################
+VARIABLE SCOPE
+
+x = 5 #global variable 
+def func():
+    global x
+    x = 7#local variable 
+    return x
+print(x)
+print(func())
+print(x)
+
+#################
+INTRO TO LIST
+
+number = [1,2,3,4]
+print (number[2]	)
+
+word = ["word1","word2","word3"]
+print(word[:3])
+
+
+mixed = [ 1,2,3,4,"word1","word2",None]
+print(mixed[-1:])
+
+mixed[1] = "two"
+print(mixed)
+#################################
+
+
+# how to add item to your list 
+fruits = ['grapes','apple']
+fruits.append('mango')
+print(fruits)
+
+# most common things that you can do with your list most important
+
+fruits = []
+fruits.append('apple')
+fruits.append('mango')
+fruits.append('banana ')
+print(fruits)
+
+
+
+
+# some more method to add data to our list 
+# innsert method 
+# how to join (two list )
+# extend method 
+# difference between append and extend method 
+fruits = ['apple','grapes','banana']
+fruits.insert(1,'pineapple')
+print(fruits)
+
+fruits = ['apple','grapes','banana']
+fruits1 = ['strawberry','lichi','orange','pineapple']
+fruits = fruits + fruits1
+print(fruits)..
+ 
+fruits1 = ['apple','banana']
+fruits2 = ['orange','lichi']
+fruits1.extend(fruits2)
+print (fruits1)
+print(fruits2)..
+
+fruits1 = ['apple','banana']
+fruits2 = ['orange','lichi']
+
+# fruits1.extend(fruits2)
+fruits1.append(fruits2)
+print (fruits1)
+print(fruits2)
+
+###############################
+# method to delete  a data from list 
+
+name = ['shivam','prerna','sonal']
+name.pop(1)
+print(name)
+
+one more method 
+
+name = ['shivam','prerna','sonal']
+del name[2]
+print(name)
+
+name = ['shivam','prerna','sonal']
+name.remove('prerna')
+print(name)
+
+
+########################
+hum kaise chk karenge koi eliment humare lsit me hai ya nahi 
+fruits = ['apple','banana','orange','grapes']
+
+if 'apple ' in fruits:
+    print("present")
+else:
+    print("not present")    
+
+###########################
+
+# some more list methods in python 
+# count
+# sort method 
+# sorted function
+# reverse
+# clear
+# copy
+fruits = ['apple','banana','orange','grapes']
+print(fruits.count('apple'))
+
+fruits = ['apple','banana','orange','grapes']
+fruits.sort()
+print(fruits)
+
+number = [2,4,3,5,6,9]
+print(sorted(number))	
+
+
+number = [2,4,3,5,6,9]
+number.clear()
+print(sorted(number))
+
+number = [2,4,5,7,8,9,1]
+number_copy = number.copy()
+print(number)
+
+######################################
+IS VS EQUAL 
+
+fruits1 = ['orange','apple','pear']
+fruits3 = ['orange','apple','pear']
+fruits2 = ['banana','kiwi','apple','bannana']
+
+print(fruits1 == fruits3) //true 
+print(fruits1 is fruits3)// false qki dono alag alag objext hai alag alag place per hai tahst y flaste 
+
+
+################################################################
+# split method 
+# convert string into a list
+
+user_info = "Shivam 24".split()
+print(user_info)
+
+suppose space nai hai comma diya hai humko waha se todna hai phir kya karenge uska code dikha rha hu
+
+user_info =  "shivam,24".split(',')
+print(user_info)
+
+# ek or example hai jisme name or age inout kar k split method use karna  hai then 
+name,age = input("enter your name and age ").split(',')
+print(f"your name is {name}and age is{age} ")
+
+
+##############################################################
+# join method 
+user_info = ['Shivam','24']
+print(','.join(user_info))
+##############################################################
+
+# list and string
+# strings are immutable 
+# list are mutable
+
+s =  "string"
+
+# t = s.title()
+# print(t)
+
+l = ['shi   vam','prerna','sonal']
+l.append('word4')
+print(l)
+print(s)
+##############################################################
+fruits = ['apple', 'banana', 'orange', 'pineapple']
+
+for fruit in fruits:
+        print(fruit) 
+
+
+fruits = ['apple', 'banana', 'orange', 'pineapple']
+i = 0 
+while i < len(fruits):
+    print(fruits[i])
+    i = i+1
+
+
+############################################################
+
+# # list inside list
+matrix = [1,2,3],[4,5,6],[7,8,9]
+# print(matrix[2])
+for i in matrix:
+    print(i)
+
+
+# # list inside list
+matrix = [1,2,3],[4,5,6],[7,8,9]
+# print(matrix[2])
+for sublist in matrix:
+    for i in sublist:
+
+         print(i)
+
+
+#  if you want to acces inside list 
+matrix = [1,2,3],[4,5,6],[7,8,9]
+print(matrix[2][0])
+
+###########################################################
+# Type function in python 
+# chk krna hai ki kis type ka element thai then we can use type keyword
+
+s = "string"
+print(type(s))
+###########################################################
+# generate list with range function
+# number = list(range(1,10))
+# print(number)
+
+# number = list(range(1,11))
+# number.pop()
+# print(number)
+
+# number = list(range(1,11))
+# print(number.pop())
+# yeh store kar k rakh leta hai jo value pop hui soo koi loss nai hota hai isme 
+
+# INDEX method
+# numbers = [1,2,3,4,5,6,7,8,1,9]
+# print(numbers.index(1,3))
+
+# pass list to a function
+
+numbers = [1,2,3,4,5,6,7,8,1,9]
+def negative_list(l):
+    negative = []
+    for i in l:
+        negative.append(-i)
+    return negative
+print(negative_list(numbers))
+
+EXAMPLE ------------------
+# define a function which will take list containing number as input
+# and return list containing square of every elenment 
+solution--------
+def square_list(l):
+    square = []
+    for i in l:
+        square.append(i**1)
+    return square
+numbers = list(range(1,11))
+print(square_list(numbers))
+
+
+ONE MORE EXAMPLE 
+# define a function which will take list as a argument and this function will return a reversed list 
+def revers_list(l):
+    l.reverse()
+    return l
+number = list(range(1,10))
+print(revers_list(number))     
+
+one more method 
+def revers_list(l):
+        return l[::-1]
+number = list(range(1,10))
+print(revers_list(number))  
+
+pahele function banaana hai fir usk ander ek lsit bana liye jisme elements store karwanege 
+fir pop karna hai pop kar k ek naya variable me store karwaenge fir jo empty list me append karwa denge 
+code kuch esa hai
+def reverse_list(l):
+    r_list = []
+    for i in range(len(l)):
+        popped_item = l.pop()
+        r_list.append(popped_item)
+    return r_list
+number = [1,2,3,4]
+print(reverse_list(number))
+
+
+ONE MORE EXAMPLE 
+
+# define a function that take list of word as a argument and return list with reversed of every element in the list 
+def reversed_list(l):
+    element = []
+    for i in l:
+         element.append(i[::-1])
+    return element
+string = ["shivam","singh","prerna","singh"]
+print(reversed_list(string))
+
+ONE MORE EXAMPLE 
+
+# filter odd even 
+# define a function
+# input 
+# list - [1,2,3,4,5,6,7]
+# output -  [1,3,5,7],[2,4,6]
+
+def filter_odd_even(l):
+    odd_nums = []
+    even_nums = []
+    for i in l:
+        if i % 2 == 0:
+            even_nums.append(i)
+        else:
+            odd_nums.append(i)
+    output = [odd_nums,even_nums]
+    return output
+number = [1,2,3,4,5,6,7]
+print(filter_odd_even(number))
+
+
+# one more example 
+# input [1,2,5,8][1,2,7,6]
+# in dono me jo common hai woh print karwana hai 
+# o/p will be [1,2]
+
+def common_finder(l1,l2):
+    output = []
+    for i in l1:
+        if i in l2:
+            output.append(i)
+    return output
+
+
+print(common_finder([1,2,5,8],[1,2,7,6]) )
+
+##############################################################
+
+Min and MAX function in python                                                                                                lec 105
+number = [6,60,2]
+ print(min(number))       output = 2
+number = [6,60,2]
+ print(max(number))       output = 60
+More Example 
+number = [6,60,2]
+def greatest_diff(l):
+    return max(l) - min(l)
+print(greatest_diff(number))
+
+###############################################################
+
+Problm solving
+#function
+#[1,2,3,[1,2],[3,4]]
+#output = 2         isme count karna ahai list kitne baar hai function use kar k 
+Solution 
+def list_count(l):
+    count = 0
+    for i in l:
+        if type(i) == list:                                                                                                    lec 107
+            count = count+1
+    return count
+mixed = [1,2,3,[1,2],[3,4]]
+print(list_count(mixed))
+Output = 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
