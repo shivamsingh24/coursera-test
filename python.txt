@@ -1,4 +1,4 @@
-pwd-print working diroctry Shivam
+pwd-print working diroctry Shivam MM
 current location btayega
 ls- saare detail mil jayega folders ka
 clear-screen ko clear karne k liye
